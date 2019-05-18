@@ -3,7 +3,7 @@
   <BOUNDS type="Window" width="7710" height="16035">
   </BOUNDS>
   <NODE id="3" nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox">
-  <BOUNDS type="Box" left="4245" top="2535" width="0" height="0">
+  <BOUNDS type="Box" left="6045" top="645" width="0" height="0">
   </BOUNDS>
   <PIN pinname="SliceOffset" visible="1">
   </PIN>
@@ -14,18 +14,8 @@
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
-  <NODE id="4" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)" componentmode="InABox">
-  <BOUNDS type="Box" left="1545" top="2835" width="0" height="0">
-  </BOUNDS>
-  <PIN pinname="Y Input Value" visible="1">
-  </PIN>
-  <PIN pinname="Rows" visible="0" values="|1|">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
   <NODE id="6" nodename="AudioDestination (HTML5 Audio)" systemname="AudioDestination (HTML5 Audio)" componentmode="Hidden">
-  <BOUNDS type="Node" left="3165" top="6750" width="100" height="100">
+  <BOUNDS type="Node" left="3135" top="2715" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Input 1" visible="1">
   </PIN>
@@ -33,9 +23,9 @@
   </PIN>
   </NODE>
   <NODE id="10" nodename="AudioPlayer (HTML5 Audio MediaElementSource)" systemname="AudioPlayer (HTML5 Audio MediaElementSource)" componentmode="Hidden">
-  <BOUNDS type="Node" left="2820" top="3570" width="100" height="100">
+  <BOUNDS type="Node" left="4500" top="1260" width="100" height="100">
   </BOUNDS>
-  <PIN pinname="Play" visible="1">
+  <PIN pinname="Play" visible="1" values="|1|">
   </PIN>
   <PIN pinname="Loop" visible="1" values="|0|">
   </PIN>
@@ -53,49 +43,13 @@
   </PIN>
   </NODE>
   <NODE id="55" nodename="Gain (HTML5 Audio)" systemname="Gain (HTML5 Audio)" componentmode="Hidden">
-  <BOUNDS type="Node" left="2925" top="5595" width="100" height="100">
+  <BOUNDS type="Node" left="4020" top="1935" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Input 1" visible="1">
   </PIN>
   <PIN pinname="Gain" visible="1">
   </PIN>
   <PIN pinname="Gain Modulation" visible="1">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
-  <NODE id="62" nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox">
-  <BOUNDS type="Box" left="3120" top="675" width="100" height="100">
-  </BOUNDS>
-  <PIN pinname="SliceOffset" visible="1">
-  </PIN>
-  <PIN pinname="Input String" visible="1" values="|it seams like for savety reason, the user has to click the window first before Audio Elements can play sound.|">
-  </PIN>
-  <PIN pinname="Rows" visible="0" values="|1|">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
-  <NODE id="64" nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox">
-  <BOUNDS type="Box" left="3000" top="4305" width="100" height="100">
-  </BOUNDS>
-  <PIN pinname="SliceOffset" visible="1">
-  </PIN>
-  <PIN pinname="Input String" visible="1" values="|a space ship audio loop |">
-  </PIN>
-  <PIN pinname="Rows" visible="0" values="|1|">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
-  <NODE id="65" nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox">
-  <BOUNDS type="Box" left="4965" top="6615" width="100" height="100">
-  </BOUNDS>
-  <PIN pinname="SliceOffset" visible="1">
-  </PIN>
-  <PIN pinname="Input String" visible="1" values="|the audio output|">
-  </PIN>
-  <PIN pinname="Rows" visible="0" values="|1|">
   </PIN>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
@@ -110,52 +64,76 @@
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
-  <NODE id="80" nodename="FlipFlop (Animation)" systemname="FlipFlop (Animation)" componentmode="Hidden">
-  <BOUNDS type="Node" left="1185" top="2280" width="100" height="100">
+  <NODE id="87" nodename="Element (HTML)" systemname="Element (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="4260" top="6600" width="100" height="100">
   </BOUNDS>
-  <PIN pinname="Set" visible="1">
+  <PIN pinname="Style In" visible="1">
   </PIN>
-  <PIN pinname="Reset" visible="1" values="|0|">
+  <PIN pinname="Tag Name" visible="1">
+  </PIN>
+  <PIN pinname="Parent" visible="1">
+  </PIN>
+  <PIN pinname="Text" visible="1">
+  </PIN>
+  <PIN pinname="Enabled" visible="1">
+  </PIN>
+  <PIN pinname="Attribute Names" visible="0" values="||">
   </PIN>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
-  <NODE id="84" nodename="TogEdge (Animation)" systemname="TogEdge (Animation)" componentmode="Hidden">
-  <BOUNDS type="Node" left="570" top="660" width="100" height="100">
-  </BOUNDS>
-  <PIN pinname="Input" visible="1">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
-  <NODE id="85" nodename="MonoFlop (Animation)" systemname="MonoFlop (Animation)" componentmode="Hidden">
-  <BOUNDS type="Node" left="1320" top="1140" width="100" height="100">
-  </BOUNDS>
-  <PIN pinname="Set" visible="1">
-  </PIN>
-  <PIN pinname="Reset" visible="1">
-  </PIN>
-  <PIN pinname="Time" visible="1">
-  </PIN>
-  <PIN pinname="Retriggerable" visible="1">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
-  <NODE id="86" nodename="TogEdge (Animation)" systemname="TogEdge (Animation)" componentmode="Hidden">
-  <BOUNDS type="Node" left="1290" top="1620" width="100" height="100">
-  </BOUNDS>
-  <PIN pinname="Input" visible="1">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
-  <NODE id="89" nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox">
-  <BOUNDS type="Box" left="4380" top="1440" width="0" height="0">
+  <NODE id="88" nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox">
+  <BOUNDS type="Box" left="4065" top="5910" width="0" height="0">
   </BOUNDS>
   <PIN pinname="SliceOffset" visible="1">
   </PIN>
-  <PIN pinname="Input String" visible="1" values="|left click sound|">
+  <PIN pinname="Input String" visible="1" values="|body|">
+  </PIN>
+  <PIN pinname="Rows" visible="0" values="|1|">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="89" nodename="Style (HTML)" systemname="Style (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="2160" top="6600" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Style In" visible="1">
+  </PIN>
+  <PIN pinname="Property Name" visible="1">
+  </PIN>
+  <PIN pinname="Property Value" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="90" nodename="ApplyStyle (HTML)" systemname="ApplyStyle (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="2670" top="7155" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Style" visible="1">
+  </PIN>
+  <PIN pinname="Element" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="91" nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox">
+  <BOUNDS type="Box" left="900" top="5235" width="0" height="0">
+  </BOUNDS>
+  <PIN pinname="SliceOffset" visible="1">
+  </PIN>
+  <PIN pinname="Input String" visible="1" values="|background-image|">
+  </PIN>
+  <PIN pinname="Rows" visible="0" values="|1|">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="92" nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox">
+  <BOUNDS type="Box" left="2880" top="5295" width="0" height="0">
+  </BOUNDS>
+  <PIN pinname="SliceOffset" visible="1">
+  </PIN>
+  <PIN pinname="Input String" visible="1" values="|url(&quot;https://hararu.com/wp-content/uploads/2018/01/red-chilli-mild.jpg&quot;)|">
   </PIN>
   <PIN pinname="Rows" visible="0" values="|1|">
   </PIN>
@@ -164,22 +142,20 @@
   </NODE>
   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="10" dstpinname="Filename">
   </LINK>
-  <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Play">
-  </LINK>
   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="55" dstpinname="Input 1">
   </LINK>
   <LINK srcnodeid="55" srcpinname="Output 1" dstnodeid="6" dstpinname="Input 1">
   </LINK>
-  <LINK srcnodeid="80" srcpinname="Output" dstnodeid="4" dstpinname="Y Input Value">
-  </LINK>
-  <LINK srcnodeid="79" srcpinname="Left Button" dstnodeid="84" dstpinname="Input">
-  </LINK>
-  <LINK srcnodeid="84" srcpinname="Down Edge" dstnodeid="85" dstpinname="Set">
-  </LINK>
-  <LINK srcnodeid="85" srcpinname="Output" dstnodeid="86" dstpinname="Input">
-  </LINK>
-  <LINK srcnodeid="86" srcpinname="Down Edge" dstnodeid="80" dstpinname="Set">
-  </LINK>
   <LINK srcnodeid="79" srcpinname="Left Button" dstnodeid="10" dstpinname="Do Seek">
+  </LINK>
+  <LINK srcnodeid="88" srcpinname="Output String" dstnodeid="87" dstpinname="Tag Name">
+  </LINK>
+  <LINK srcnodeid="87" srcpinname="Layers Out" dstnodeid="90" dstpinname="Element">
+  </LINK>
+  <LINK srcnodeid="89" srcpinname="Style Out" dstnodeid="90" dstpinname="Style">
+  </LINK>
+  <LINK srcnodeid="91" srcpinname="Output String" dstnodeid="89" dstpinname="Property Name">
+  </LINK>
+  <LINK srcnodeid="92" srcpinname="Output String" dstnodeid="89" dstpinname="Property Value">
   </LINK>
   </PATCH>
