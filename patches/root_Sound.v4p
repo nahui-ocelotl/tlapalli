@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
   <PATCH>
-  <BOUNDS type="Window" width="8205" height="16035">
+  <BOUNDS type="Window" width="7710" height="16035">
   </BOUNDS>
   <NODE id="3" nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox">
   <BOUNDS type="Box" left="4245" top="2535" width="0" height="0">
   </BOUNDS>
   <PIN pinname="SliceOffset" visible="1">
   </PIN>
-  <PIN pinname="Input String" visible="1" values="|sounds/Spaceship.mp3|">
+  <PIN pinname="Input String" visible="1" values="|sounds/chiltic.mp3|">
   </PIN>
   <PIN pinname="Rows" visible="0" values="|1|">
   </PIN>
@@ -37,7 +37,7 @@
   </BOUNDS>
   <PIN pinname="Play" visible="1">
   </PIN>
-  <PIN pinname="Loop" visible="1">
+  <PIN pinname="Loop" visible="1" values="|0|">
   </PIN>
   <PIN pinname="Start Time" visible="1">
   </PIN>
@@ -48,16 +48,6 @@
   <PIN pinname="Seek Position" visible="1">
   </PIN>
   <PIN pinname="Filename" visible="1">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
-  <NODE id="11" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)" componentmode="InABox">
-  <BOUNDS type="Box" left="3015" top="2445" width="0" height="0">
-  </BOUNDS>
-  <PIN pinname="Y Input Value" visible="1" values="|1|">
-  </PIN>
-  <PIN pinname="Rows" visible="0" values="|1|">
   </PIN>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
@@ -160,11 +150,21 @@
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
+  <NODE id="89" nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox">
+  <BOUNDS type="Box" left="4380" top="1440" width="0" height="0">
+  </BOUNDS>
+  <PIN pinname="SliceOffset" visible="1">
+  </PIN>
+  <PIN pinname="Input String" visible="1" values="|left click sound|">
+  </PIN>
+  <PIN pinname="Rows" visible="0" values="|1|">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="10" dstpinname="Filename">
   </LINK>
   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Play">
-  </LINK>
-  <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Loop">
   </LINK>
   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="55" dstpinname="Input 1">
   </LINK>
@@ -179,5 +179,7 @@
   <LINK srcnodeid="85" srcpinname="Output" dstnodeid="86" dstpinname="Input">
   </LINK>
   <LINK srcnodeid="86" srcpinname="Down Edge" dstnodeid="80" dstpinname="Set">
+  </LINK>
+  <LINK srcnodeid="79" srcpinname="Left Button" dstnodeid="10" dstpinname="Do Seek">
   </LINK>
   </PATCH>
