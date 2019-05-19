@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
   <PATCH>
-  <BOUNDS type="Window" width="10275" height="16035">
+  <BOUNDS type="Window" width="9780" height="16035">
   </BOUNDS>
   <NODE id="3" nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox">
   <BOUNDS type="Box" left="3600" top="6015" width="0" height="0">
@@ -159,7 +159,9 @@
   </PIN>
   <PIN pinname="Input 2" visible="1" values="|url(&quot;http://hdwallpapersrocks.com/wp-content/uploads/2013/10/Hot-summer-cool-green-lemon-slices-wallpapers.jpg&quot;)|">
   </PIN>
-  <PIN pinname="Input Count" visible="0" values="|2|">
+  <PIN pinname="Input 3" visible="1" values="|url(&quot;https://incensosdomundo.com/WebRoot/StorePT/Shops/ea8072/4FCF/B686/0FA3/7599/2E1E/AC10/1416/CB76/Ambar.jpg&quot;)|">
+  </PIN>
+  <PIN pinname="Input Count" visible="0" values="|3|">
   </PIN>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
@@ -205,7 +207,9 @@
   </PIN>
   <PIN pinname="Input 2" visible="1" values="|sounds/xoctic.mp3|">
   </PIN>
-  <PIN pinname="Input Count" visible="0" values="|2|">
+  <PIN pinname="Input 3" visible="1" values="|sounds/coztic.mp3|">
+  </PIN>
+  <PIN pinname="Input Count" visible="0" values="|3|">
   </PIN>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
