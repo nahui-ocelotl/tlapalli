@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
   <PATCH>
-  <BOUNDS type="Window" width="9780" height="16035">
+  <BOUNDS type="Window" width="9285" height="16035">
   </BOUNDS>
   <NODE id="3" nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox">
   <BOUNDS type="Box" left="3600" top="6015" width="0" height="0">
@@ -462,10 +462,6 @@
   </LINK>
   <LINK srcnodeid="95" srcpinname="Output" dstnodeid="100" dstpinname="Y Input Value">
   </LINK>
-  <LINK srcnodeid="100" srcpinname="Y Output Value" dstnodeid="96" dstpinname="Index">
-  </LINK>
-  <LINK srcnodeid="100" srcpinname="Y Output Value" dstnodeid="93" dstpinname="Index">
-  </LINK>
   <LINK srcnodeid="97" srcpinname="Output" dstnodeid="101" dstpinname="Input">
   </LINK>
   <LINK srcnodeid="101" srcpinname="Count" dstnodeid="102" dstpinname="Input 1">
@@ -501,5 +497,9 @@
   <LINK srcnodeid="109" srcpinname="Output" dstnodeid="114" dstpinname="Input 2">
   </LINK>
   <LINK srcnodeid="111" srcpinname="Output" dstnodeid="114" dstpinname="Input 3">
+  </LINK>
+  <LINK srcnodeid="107" srcpinname="Former Slice" dstnodeid="96" dstpinname="Index">
+  </LINK>
+  <LINK srcnodeid="107" srcpinname="Former Slice" dstnodeid="93" dstpinname="Index">
   </LINK>
   </PATCH>
