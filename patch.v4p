@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
   <PATCH>
-  <BOUNDS type="Window" width="8295" height="19245">
+  <BOUNDS type="Window" width="7800" height="19245">
   </BOUNDS>
   <NODE id="3" nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox">
   <BOUNDS type="Box" left="4155" top="6165" width="0" height="0">
@@ -54,26 +54,8 @@
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
-  <NODE id="87" nodename="Element (HTML)" systemname="Element (HTML)" componentmode="Hidden">
-  <BOUNDS type="Node" left="7605" top="8370" width="100" height="100">
-  </BOUNDS>
-  <PIN pinname="Style In" visible="1">
-  </PIN>
-  <PIN pinname="Tag Name" visible="1">
-  </PIN>
-  <PIN pinname="Parent" visible="1">
-  </PIN>
-  <PIN pinname="Text" visible="1">
-  </PIN>
-  <PIN pinname="Enabled" visible="1">
-  </PIN>
-  <PIN pinname="Attribute Names" visible="0" values="||">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
   <NODE id="88" nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox">
-  <BOUNDS type="Box" left="7410" top="7680" width="0" height="0">
+  <BOUNDS type="Box" left="6465" top="7155" width="0" height="0">
   </BOUNDS>
   <PIN pinname="SliceOffset" visible="1">
   </PIN>
@@ -346,14 +328,46 @@
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
-  <NODE id="119" nodename="Group (HTML)" systemname="Group (HTML)" componentmode="Hidden">
-  <BOUNDS type="Node" left="6420" top="3435" width="100" height="100">
+  <NODE id="121" nodename="GetElement (HTML)" systemname="GetElement (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="6975" top="8025" width="100" height="100">
   </BOUNDS>
+  <PIN pinname="Selector" visible="1">
+  </PIN>
   <PIN pinname="Parent" visible="1">
   </PIN>
-  <PIN pinname="Slot Style In" visible="1">
+  <PIN pinname="Refresh" visible="1">
   </PIN>
-  <PIN pinname="Output Count" visible="0" values="|2|">
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="122" nodename="Style (HTML)" systemname="Style (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="1230" top="3900" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Style In" visible="1">
+  </PIN>
+  <PIN pinname="Property Name" visible="1" values="|text-align|">
+  </PIN>
+  <PIN pinname="Property Value" visible="1" values="|center|">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="123" nodename="ApplyStyle (HTML)" systemname="ApplyStyle (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="930" top="4695" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Style" visible="1">
+  </PIN>
+  <PIN pinname="Element" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="124" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)" componentmode="InABox">
+  <BOUNDS type="Box" left="7650" top="4965" width="0" height="0">
+  </BOUNDS>
+  <PIN pinname="Y Input Value" visible="1">
+  </PIN>
+  <PIN pinname="Rows" visible="0" values="|1|">
   </PIN>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
@@ -363,10 +377,6 @@
   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="55" dstpinname="Input 1">
   </LINK>
   <LINK srcnodeid="55" srcpinname="Output 1" dstnodeid="6" dstpinname="Input 1">
-  </LINK>
-  <LINK srcnodeid="88" srcpinname="Output String" dstnodeid="87" dstpinname="Tag Name">
-  </LINK>
-  <LINK srcnodeid="87" srcpinname="Layers Out" dstnodeid="90" dstpinname="Element">
   </LINK>
   <LINK srcnodeid="89" srcpinname="Style Out" dstnodeid="90" dstpinname="Style">
   </LINK>
@@ -416,8 +426,14 @@
   </LINK>
   <LINK srcnodeid="107" srcpinname="Output" dstnodeid="117" dstpinname="Input 2">
   </LINK>
-  <LINK srcnodeid="119" srcpinname="Element Slot 1" dstnodeid="87" dstpinname="Parent">
+  <LINK srcnodeid="88" srcpinname="Output String" dstnodeid="121" dstpinname="Selector">
   </LINK>
-  <LINK srcnodeid="119" srcpinname="Element Slot 2" dstnodeid="103" dstpinname="Parent">
+  <LINK srcnodeid="121" srcpinname="Layers Out" dstnodeid="90" dstpinname="Element">
+  </LINK>
+  <LINK srcnodeid="122" srcpinname="Style Out" dstnodeid="123" dstpinname="Style">
+  </LINK>
+  <LINK srcnodeid="103" srcpinname="Layers Out" dstnodeid="123" dstpinname="Element">
+  </LINK>
+  <LINK srcnodeid="107" srcpinname="Former Slice" dstnodeid="124" dstpinname="Y Input Value">
   </LINK>
   </PATCH>
