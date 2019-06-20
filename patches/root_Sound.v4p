@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
   <PATCH>
-  <BOUNDS type="Window" width="20235" height="16035">
+  <BOUNDS type="Window" width="19740" height="16035">
   </BOUNDS>
   <NODE id="3" nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox">
   <BOUNDS type="Box" left="4245" top="2535" width="0" height="0">
   </BOUNDS>
   <PIN pinname="SliceOffset" visible="1">
   </PIN>
-  <PIN pinname="Input String" visible="1" values="|sounds/Spaceship.mp3|">
+  <PIN pinname="Input String" visible="1" values="|sounds/chiltic.mp3|">
   </PIN>
   <PIN pinname="Rows" visible="0" values="|1|">
   </PIN>
