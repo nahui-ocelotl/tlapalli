@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
   <PATCH>
-  <BOUNDS type="Window" width="9540" height="16035">
+  <BOUNDS type="Window" width="9045" height="16035">
   </BOUNDS>
   <NODE id="6" nodename="AudioDestination (HTML5 Audio)" systemname="AudioDestination (HTML5 Audio)" componentmode="Hidden">
-  <BOUNDS type="Node" left="2265" top="7275" width="100" height="100">
+  <BOUNDS type="Node" left="2355" top="7785" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Input 1" visible="1">
   </PIN>
@@ -11,7 +11,7 @@
   </PIN>
   </NODE>
   <NODE id="10" nodename="AudioPlayer (HTML5 Audio MediaElementSource)" systemname="AudioPlayer (HTML5 Audio MediaElementSource)" componentmode="Hidden">
-  <BOUNDS type="Node" left="1200" top="5655" width="100" height="100">
+  <BOUNDS type="Node" left="1290" top="6165" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Play" visible="1" values="|1|">
   </PIN>
@@ -31,7 +31,7 @@
   </PIN>
   </NODE>
   <NODE id="55" nodename="Gain (HTML5 Audio)" systemname="Gain (HTML5 Audio)" componentmode="Hidden">
-  <BOUNDS type="Node" left="1770" top="6555" width="100" height="100">
+  <BOUNDS type="Node" left="1860" top="7065" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Input 1" visible="1">
   </PIN>
@@ -43,7 +43,7 @@
   </PIN>
   </NODE>
   <NODE id="93" nodename="OnClick (HTML)" systemname="OnClick (HTML)" componentmode="Hidden">
-  <BOUNDS type="Node" left="3060" top="1290" width="100" height="100">
+  <BOUNDS type="Node" left="2265" top="1170" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Element" visible="1">
   </PIN>
@@ -53,7 +53,7 @@
   </PIN>
   </NODE>
   <NODE id="107" nodename="Select (Value)" systemname="Select (Value)" componentmode="Hidden">
-  <BOUNDS type="Node" left="1905" top="2445" width="100" height="100">
+  <BOUNDS type="Node" left="2505" top="2505" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Input" visible="1">
   </PIN>
@@ -63,7 +63,7 @@
   </PIN>
   </NODE>
   <NODE id="109" nodename="GetSlice (Spreads)" systemname="GetSlice (Spreads)" componentmode="Hidden">
-  <BOUNDS type="Node" left="1395" top="1755" width="100" height="100">
+  <BOUNDS type="Node" left="2610" top="1755" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Input" visible="1" values="|1|">
   </PIN>
@@ -75,7 +75,7 @@
   </PIN>
   </NODE>
   <NODE id="110" nodename="Add (String)" systemname="Add (String)" componentmode="Hidden">
-  <BOUNDS type="Node" left="2025" top="3870" width="100" height="100">
+  <BOUNDS type="Node" left="2175" top="5130" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Intersperse String" visible="1">
   </PIN>
@@ -117,7 +117,7 @@
   </PIN>
   </NODE>
   <NODE id="114" nodename="GetSlice (String)" systemname="GetSlice (String)" componentmode="Hidden">
-  <BOUNDS type="Node" left="1380" top="3300" width="100" height="100">
+  <BOUNDS type="Node" left="1470" top="3810" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Input" visible="1">
   </PIN>
@@ -128,34 +128,12 @@
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
-  <NODE id="115" nodename="S+H (String)" systemname="S+H (String)" componentmode="Hidden">
-  <BOUNDS type="Node" left="2700" top="4425" width="100" height="100">
-  </BOUNDS>
-  <PIN pinname="Input" visible="1">
-  </PIN>
-  <PIN pinname="Set" visible="1">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
   <NODE id="116" nodename="Add (Value Spectral)" systemname="Add (Value Spectral)" componentmode="Hidden">
-  <BOUNDS type="Node" left="4320" top="3105" width="100" height="100">
+  <BOUNDS type="Node" left="1605" top="5145" width="100" height="100">
   </BOUNDS>
   <PIN pinname="Input" visible="1">
   </PIN>
   <PIN pinname="Bin Size" visible="1">
-  </PIN>
-  <PIN pinname="Descriptive Name" visible="0" values="||">
-  </PIN>
-  </NODE>
-  <NODE id="117" nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox">
-  <BOUNDS type="Box" left="2520" top="5025" width="0" height="0">
-  </BOUNDS>
-  <PIN pinname="SliceOffset" visible="1">
-  </PIN>
-  <PIN pinname="Input String" visible="1">
-  </PIN>
-  <PIN pinname="Rows" visible="0" values="|1|">
   </PIN>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
@@ -168,8 +146,6 @@
   </LINK>
   <LINK srcnodeid="109" srcpinname="Output" dstnodeid="107" dstpinname="Input">
   </LINK>
-  <LINK srcnodeid="107" srcpinname="Output" dstnodeid="10" dstpinname="Do Seek">
-  </LINK>
   <LINK srcnodeid="111" srcpinname="Layers Out" dstnodeid="112" dstpinname="Element">
   </LINK>
   <LINK srcnodeid="112" srcpinname="Attribute Value" dstnodeid="114" dstpinname="Input">
@@ -180,14 +156,10 @@
   </LINK>
   <LINK srcnodeid="111" srcpinname="Layers Out" dstnodeid="93" dstpinname="Element">
   </LINK>
-  <LINK srcnodeid="110" srcpinname="Output" dstnodeid="115" dstpinname="Input">
-  </LINK>
   <LINK srcnodeid="93" srcpinname="OnEvent" dstnodeid="116" dstpinname="Input">
   </LINK>
-  <LINK srcnodeid="116" srcpinname="Output" dstnodeid="115" dstpinname="Set">
+  <LINK srcnodeid="116" srcpinname="Output" dstnodeid="10" dstpinname="Do Seek">
   </LINK>
-  <LINK srcnodeid="115" srcpinname="Output" dstnodeid="117" dstpinname="Input String">
-  </LINK>
-  <LINK srcnodeid="117" srcpinname="Output String" dstnodeid="10" dstpinname="Filename">
+  <LINK srcnodeid="110" srcpinname="Output" dstnodeid="10" dstpinname="Filename">
   </LINK>
   </PATCH>
