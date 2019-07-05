@@ -20,7 +20,46 @@
 			 });
 		</script>
 		
+		<style>
 
+		body {
+		background-image: url(img_lights.jpg);
+ 		background-repeat: no-repeat;
+  		background-attachment: fixed;
+  		background-position: center; 
+		}
+
+		.container {
+  		max-width: 400px;
+		}
+
+		.container img {
+  		width: 100%;
+ 		height: auto;
+		}
+
+		.container {
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+  		-ms-transform: translate(-50%, -50%);
+		}
+
+		.button {
+  		border: none;
+  		padding: 25px;
+  		cursor: pointer;
+		}
+
+		.coztic {background-color: yellow;} 
+		.alaxtic {background-color: orange;} 
+		.chiltic {background-color: red;}
+		.camohtic {background-color: violet;}
+		.yauhtic {background-color: blue;}  
+		.xoctic {background-color: green;}  
+
+		</style>
 		
 
 	 </head>
@@ -34,9 +73,14 @@
            
          <a href="#edit/patches/root_Sound.v4p"><div class="btn" id="btn-editor" ><span>Open Editor</span> </div></a>       
              
-           
-                
-		
+         <div class="container">
+  		<button class="button coztic"></button>
+  		<button class="button alaxtic"></button>
+  		<button class="button chiltic"></button>
+ 		<button class="button camohtic"></button>
+ 		<button class="button yauhtic"></button>
+ 		<button class="button xoctic"></button>
+	 </div>  	
 
 	 </body>
 </html>
