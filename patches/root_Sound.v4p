@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
   <PATCH>
-  <BOUNDS type="Window" width="8385" height="19305">
+  <BOUNDS type="Window" width="10065" height="19305">
   </BOUNDS>
   <NODE id="139" nodename="GetElement (HTML)" systemname="GetElement (HTML)" componentmode="Hidden">
   <BOUNDS type="Node" left="5985" top="1455" width="100" height="100">
@@ -59,39 +59,63 @@
   <NODE id="151" nodename="Cons (String)" systemname="Cons (String)" componentmode="Hidden">
   <BOUNDS type="Node" left="8115" top="1605" width="100" height="100">
   </BOUNDS>
-  <PIN pinname="Input 1" visible="1" values="|tliltic|">
+  <PIN pinname="Input 1" visible="1" values="|coztic|">
   </PIN>
-  <PIN pinname="Input 2" visible="1" values="|nextic|">
+  <PIN pinname="Input 2" visible="1" values="|lalaxtic|">
   </PIN>
-  <PIN pinname="Input 3" visible="1" values="|iztac|">
+  <PIN pinname="Input 3" visible="1" values="|chiltic|">
   </PIN>
-  <PIN pinname="Input 4" visible="1" values="|xochipaltic|">
+  <PIN pinname="Input 4" visible="1" values="|camohtic|">
   </PIN>
-  <PIN pinname="Input 5" visible="1" values="|chalchiuhtic|">
+  <PIN pinname="Input 5" visible="1" values="|yauhtic|">
   </PIN>
-  <PIN pinname="Input 6" visible="1" values="|coyotic|">
+  <PIN pinname="Input 6" visible="1" values="|xoctic|">
   </PIN>
-  <PIN pinname="Input Count" visible="0" values="|6|">
+  <PIN pinname="Input 7" visible="1" values="|tliltic|">
+  </PIN>
+  <PIN pinname="Input 8" visible="1" values="|nextic|">
+  </PIN>
+  <PIN pinname="Input 9" visible="1" values="|iztac|">
+  </PIN>
+  <PIN pinname="Input 10" visible="1" values="|xochipaltic|">
+  </PIN>
+  <PIN pinname="Input 11" visible="1" values="|chalchiuhtic|">
+  </PIN>
+  <PIN pinname="Input 12" visible="1" values="|coyotic|">
+  </PIN>
+  <PIN pinname="Input Count" visible="0" values="|12|">
   </PIN>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
   <NODE id="152" nodename="Cons (String)" systemname="Cons (String)" componentmode="Hidden">
-  <BOUNDS type="Node" left="4455" top="345" width="100" height="100">
+  <BOUNDS type="Node" left="4425" top="345" width="100" height="100">
   </BOUNDS>
-  <PIN pinname="Input 1" visible="1" values="|black|">
+  <PIN pinname="Input 1" visible="1" values="|yellow|">
   </PIN>
-  <PIN pinname="Input 2" visible="1" values="|gray|">
+  <PIN pinname="Input 2" visible="1" values="|orange|">
   </PIN>
-  <PIN pinname="Input 3" visible="1" values="|white|">
+  <PIN pinname="Input 3" visible="1" values="|red|">
   </PIN>
-  <PIN pinname="Input 4" visible="1" values="|pink|">
+  <PIN pinname="Input 4" visible="1" values="|purple|">
   </PIN>
-  <PIN pinname="Input 5" visible="1" values="|turquoise|">
+  <PIN pinname="Input 5" visible="1" values="|blue|">
   </PIN>
-  <PIN pinname="Input 6" visible="1" values="|brown|">
+  <PIN pinname="Input 6" visible="1" values="|green|">
   </PIN>
-  <PIN pinname="Input Count" visible="0" values="|6|">
+  <PIN pinname="Input 7" visible="1" values="|black|">
+  </PIN>
+  <PIN pinname="Input 8" visible="1" values="|gray|">
+  </PIN>
+  <PIN pinname="Input 9" visible="1" values="|white|">
+  </PIN>
+  <PIN pinname="Input 10" visible="1" values="|pink|">
+  </PIN>
+  <PIN pinname="Input 11" visible="1" values="|turquoise|">
+  </PIN>
+  <PIN pinname="Input 12" visible="1" values="|brown|">
+  </PIN>
+  <PIN pinname="Input Count" visible="0" values="|12|">
   </PIN>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
